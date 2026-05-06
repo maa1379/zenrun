@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453456656699",
+    "project_id": "zenrun-b3061",
+    "storage_bucket": "zenrun-b3061.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453456656699:android:f3d747df8a6735d63e9f1e",
+        "android_client_info": {
+          "package_name": "com.tivasoft.zenrun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453456656699-esb12j3e65s4jr8qesuntr2k2a7g58k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWA3u26AvRIo-AO-AV58FjUDW1HcquCkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453456656699-esb12j3e65s4jr8qesuntr2k2a7g58k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

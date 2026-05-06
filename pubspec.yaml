@@ -1,0 +1,156 @@
+name: zenrun
+description: "zenrun"
+publish_to: 'none'
+
+version: 1.0.7+2
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5+1
+  http: ^1.6.0
+  gap: ^3.0.1
+  flutter_easyloading: ^3.0.5
+  auto_size_text: ^3.0.0
+  intl: ^0.20.2
+  shared_preferences: ^2.5.4
+  rename: ^3.1.0
+  awesome_dialog: ^3.3.0
+  url_launcher: ^6.3.2
+  flutter_animate: ^4.5.2
+  flutter_native_splash: ^2.4.7
+  icons_launcher: ^3.0.3
+  lottie: ^3.3.2
+  sizer: ^3.1.3
+  simple_circular_progress_bar: ^1.0.2
+  carousel_slider: ^5.1.2
+  path_provider: ^2.1.5
+  persian_number_utility:
+  badges: ^3.1.2
+  flick_video_player: ^0.9.0
+  video_player: ^2.11.0
+  get_thumbnail_video: ^0.7.3
+  flutter_cache_manager: ^3.4.1
+  scroll_to_index: ^3.0.1
+  permission_handler: ^12.0.1
+  image_picker:
+  dio:
+  collection:
+  flutter_svg: ^2.2.3
+  chewie: ^1.13.0
+  youtube_player_flutter: ^9.1.3
+  fl_chart:
+  record: ^6.2.0
+  file_saver: ^0.3.1
+  flutter_staggered_grid_view: ^0.7.0
+  open_file: ^3.5.11
+  share_plus: ^12.0.1
+  flutter_typeahead: ^5.2.0
+  toln: ^0.0.3
+  firebase_messaging: ^16.1.1
+  firebase_core: ^4.4.0
+  fast_cached_network_image: ^1.3.3+5
+  widget_zoom: ^0.0.4
+  app_links: ^7.0.0
+  path: ^1.9.1
+  phone_form_field: ^10.0.17
+  marquee: ^2.3.0
+  battery_optimization_helper: ^0.2.0
+  pedometer: ^4.1.1
+  flutter_background_service: ^5.1.0
+  flutter_background_service_android: ^6.3.1
+  flutter_local_notifications: ^20.1.0
+  cached_video_player_plus: ^4.1.0
+  get: ^4.7.3
+  percent_indicator: ^4.2.5
+  swipe_to: ^1.0.6
+  photo_view: ^0.15.0
+  dotted_border: ^3.1.0
+  flutter_webrtc: ^1.3.0
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.1
+  emoji_picker_flutter: ^4.4.0
+  shamsi_date:
+  audio_waveforms: ^2.0.2
+  socket_io_client: ^3.1.4
+  flutter_tts: ^4.2.5
+  voice_note_kit: ^1.3.3
+  get_storage: ^2.1.1
+  font_awesome_flutter: ^10.12.0
+  story_view:
+  just_audio: ^0.10.5
+  http_parser:
+  visibility_detector:
+  just_audio_background: ^0.0.1-beta.17
+  flutter_stripe:
+#  telegram_web_app: ^0.3.3
+#  flutter_telegram_miniapp: ^0.0.10
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/anim/
+    - assets/locales/
+
+  fonts:
+    - family: SF Pro Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Ultralight.otf
+          weight: 100
+        - asset: assets/fonts/SF-Pro-Display-Thin.otf
+          weight: 200
+        - asset: assets/fonts/SF-Pro-Display-Light.otf
+          weight: 300
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Display-Heavy.otf
+          weight: 800
+        - asset: assets/fonts/SF-Pro-Display-Black.otf
+          weight: 900
+
+
+icons_launcher:
+  image_path: "assets/images/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+    web:
+      enable: true
+
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.png
+  android_12:
+    image: assets/images/logo.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/images/logo.png
+    icon_background_color_dark: "#ffffff"
+  ios: true
+  web: true

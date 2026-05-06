@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["Y2LWFV468L.com.tivasoft.zenrunapp"],
+        "components": [
+          {
+          "/": "/invite/*"
+          }
+        ]
+      }
+    ]
+  }
+}

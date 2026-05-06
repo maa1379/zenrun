@@ -1,0 +1,136 @@
+import '../../input_page/card_title.dart';
+import '../../input_page/gender/gender_arrow.dart';
+import '../../input_page/gender/gender_circle.dart';
+import '../../input_page/gender/gender_icon.dart';
+import '../../input_page/gender/gender_styles.dart';
+import '../../model/gender.dart';
+import '../../widget_utils.dart' show screenAwareSize;
+import 'package:flutter/material.dart';
+
+class GenderCard extends StatefulWidget {
+  final Gender gender;
+  final ValueChanged<Gender> onChanged;
+
+  const GenderCard({super.key,
+    this.gender = Gender.other,
+    required this.onChanged,
+  });
+
+  @override
+  _GenderCardState createState() => _GenderCardState();
+}
+
+class _GenderCardState extends State<GenderCard>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _arrowAnimationController;
+
+  @override
+  void initState() {
+    _arrowAnimationController = AnimationController(
+      vsync: this,
+      lowerBound: -defaultGenderAngle,
+      upperBound: defaultGenderAngle,
+      value: genderAngles[widget.gender],
+    );
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _arrowAnimationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.only(
+        left: screenAwareSize(16.0, context),
+        right: screenAwareSize(4.0, context),
+        bottom: screenAwareSize(4.0, context),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          CardTitle("GENDER", subtitle: '',),
+          Padding(
+            padding: EdgeInsets.only(top: screenAwareSize(16.0, context)),
+            child: _drawMainStack(),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _drawMainStack() {
+    return SizedBox(
+      width: double.infinity,
+      child: Stack(
+        alignment: Alignment.bottomCenter,
+        children: <Widget>[
+          _drawCircleIndicator(),
+          GenderIconTranslated(
+            gender: Gender.female,
+            isSelected: widget.gender == Gender.female,
+          ),
+          GenderIconTranslated(
+            gender: Gender.other,
+            isSelected: widget.gender == Gender.other,
+          ),
+          GenderIconTranslated(
+            gender: Gender.male,
+            isSelected: widget.gender == Gender.male,
+          ),
+          _drawGestureDetector(),
+        ],
+      ),
+    );
+  }
+
+  Widget _drawCircleIndicator() {
+    return Stack(
+      alignment: Alignment.center,
+      children: <Widget>[
+        GenderCircle(),
+        GenderArrow(listenable: _arrowAnimationController),
+      ],
+    );
+  }
+
+  _drawGestureDetector() {
+    return Positioned.fill(
+      child: TapHandler(
+        onGenderTapped: _setSelectedGender,
+      ),
+    );
+  }
+
+  void _setSelectedGender(Gender gender) {
+    widget.onChanged(gender);
+    _arrowAnimationController.animateTo(
+      genderAngles[gender]!,
+      duration: Duration(milliseconds: 150),
+    );
+  }
+}
+
+class TapHandler extends StatelessWidget {
+  final Function(Gender) onGenderTapped;
+
+  const TapHandler({super.key, required this.onGenderTapped});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.max,
+      children: <Widget>[
+        Expanded(
+            child: GestureDetector(onTap: () => onGenderTapped(Gender.female))),
+        Expanded(
+            child: GestureDetector(onTap: () => onGenderTapped(Gender.other))),
+        Expanded(
+            child: GestureDetector(onTap: () => onGenderTapped(Gender.male))),
+      ],
+    );
+  }
+}

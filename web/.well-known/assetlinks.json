@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tivasoft.zenrun",
+    "sha256_cert_fingerprints":
+    ["C1:C3:CF:89:18:F0:E8:E4:54:04:75:12:D8:1C:EB:29:55:44:77:2D:F1:10:89:E2:C9:1D:C6:5F:FE:7C:E4:AD"]
+  }
+}]
