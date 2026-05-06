@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-// import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:gap/gap.dart';
 import 'package:persian_number_utility/persian_number_utility.dart';
 import 'package:provider/provider.dart';
@@ -780,14 +780,14 @@ class _BasketPageState extends State<BasketPage>
                                       "Payment successful!",
                                     );
                                   }
-                                  // on StripeException catch (e) {
-                                  //   ViewHelper.dismissLoading();
-                                  //   final msg = e.error.localizedMessage ??
-                                  //       e.error.message ??
-                                  //       "Payment cancelled";
-                                  //   ViewHelper.showErrorDialog(this.context,
-                                  //       text: msg);
-                                  // }
+                                  on StripeException catch (e) {
+                                    ViewHelper.dismissLoading();
+                                    final msg = e.error.localizedMessage ??
+                                        e.error.message ??
+                                        "Payment cancelled";
+                                    ViewHelper.showErrorDialog(this.context,
+                                        text: msg);
+                                  }
                                   catch (e) {
                                     ViewHelper.dismissLoading();
                                     ViewHelper.showErrorDialog(this.context,

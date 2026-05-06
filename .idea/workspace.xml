@@ -10,53 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2b4d8c-689f-4c52-950a-6a12fdfbbade" name="Changes" comment="1fix feedback">
-      <change beforePath="$PROJECT_DIR$/.idea/Zenrun.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/RunnerDebug.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/RunnerDebug.entitlements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/network/api_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/network/api_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/api_models_repo/api_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/api_models_repo/api_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/api_models_repo/models/profile_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/api_models_repo/models/profile_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/api_models_repo/models/setting_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/api_models_repo/models/setting_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/auth_pages/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/auth_pages/pages/splash_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/api_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/api_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/chat_global_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/chat_global_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/comment_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/comment_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/profile_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/profile_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/social_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/social_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/story_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_controller/story_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/create_story.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/create_story.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/follow_list_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/follow_list_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chat_service/chat_screens/profile_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/home_pages/pages/music_player_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/home_pages/pages/music_player_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/profile_pages/pages/edit_profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/profile_pages/pages/edit_profile_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/profile_pages/pages/profile_setting_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/profile_pages/pages/profile_setting_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/profile_pages/pages/wallet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/profile_pages/pages/wallet_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/profile_pages/providers/profile_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/profile_pages/providers/profile_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shop_pages/pages/basket_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shop_pages/pages/basket_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shop_pages/pages/detail_product_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shop_pages/pages/detail_product_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shop_pages/pages/product_list_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shop_pages/pages/product_list_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shop_pages/providers/basket_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shop_pages/providers/basket_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/providers/social_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/providers/social_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/screens/comment_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/screens/comment_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/screens/reels_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/screens/reels_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/screens/social_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/screens/social_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/widgets/add_post_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/widgets/add_post_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/widgets/audio_player.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/widgets/audio_player.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/social_pages/widgets/video_post_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/social_pages/widgets/video_post_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

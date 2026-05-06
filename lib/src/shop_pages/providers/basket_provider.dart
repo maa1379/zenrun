@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-// import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:http/http.dart' as http;
 import 'package:persian_number_utility/persian_number_utility.dart';
 import 'package:zenrun/core/network/DataState.dart';
@@ -252,22 +252,22 @@ class BasketProvider extends ChangeNotifier {
   }
 
   Future<void> initPaymentSheetWithAppleOrGooglePay(int priceInDollars) async {
-    // final clientSecret = await fetchClientSecretDirectly(priceInDollars * 100);
-    //
-    // await Stripe.instance.initPaymentSheet(
-    //   paymentSheetParameters: SetupPaymentSheetParameters(
-    //     paymentIntentClientSecret: clientSecret,
-    //     merchantDisplayName: 'ZenRun',
-    //     applePay: PaymentSheetApplePay(merchantCountryCode: 'US'),
-    //     googlePay: PaymentSheetGooglePay(
-    //       merchantCountryCode: 'US',
-    //       testEnv: true,
-    //     ),
-    //     style: ThemeMode.light,
-    //   ),
-    // );
-    //
-    // await Stripe.instance.presentPaymentSheet();
+    final clientSecret = await fetchClientSecretDirectly(priceInDollars * 100);
+
+    await Stripe.instance.initPaymentSheet(
+      paymentSheetParameters: SetupPaymentSheetParameters(
+        paymentIntentClientSecret: clientSecret,
+        merchantDisplayName: 'ZenRun',
+        applePay: PaymentSheetApplePay(merchantCountryCode: 'US'),
+        googlePay: PaymentSheetGooglePay(
+          merchantCountryCode: 'US',
+          testEnv: true,
+        ),
+        style: ThemeMode.light,
+      ),
+    );
+
+    await Stripe.instance.presentPaymentSheet();
   }
 
   Future<bool> setBasketTruePay(String basketId, bool isCoinProduct, {String? pId}) async {

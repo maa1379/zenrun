@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-// import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:http/http.dart' as http;
 import 'package:zenrun/core/network/DataState.dart';
 import 'package:zenrun/core/widgets/Costance.dart';
@@ -59,12 +59,12 @@ class SubscriptionProvider extends ChangeNotifier {
         ViewHelper.showSuccessDialog(context, "Subscription activated!");
       }
     }
-    // on StripeException catch (e) {
-    //   ViewHelper.dismissLoading();
-    //   final msg =
-    //       e.error.localizedMessage ?? e.error.message ?? "Payment cancelled";
-    //   if (context.mounted) ViewHelper.showErrorDialog(context, text: msg);
-    // }
+    on StripeException catch (e) {
+      ViewHelper.dismissLoading();
+      final msg =
+          e.error.localizedMessage ?? e.error.message ?? "Payment cancelled";
+      if (context.mounted) ViewHelper.showErrorDialog(context, text: msg);
+    }
     catch (e) {
       ViewHelper.dismissLoading();
       if (context.mounted) {
@@ -147,19 +147,19 @@ class SubscriptionProvider extends ChangeNotifier {
     }
     final clientSecret = json.decode(response.body)['client_secret'] as String;
 
-    // await Stripe.instance.initPaymentSheet(
-    //   paymentSheetParameters: SetupPaymentSheetParameters(
-    //     paymentIntentClientSecret: clientSecret,
-    //     merchantDisplayName: 'ZenRun',
-    //     applePay: PaymentSheetApplePay(merchantCountryCode: 'US'),
-    //     googlePay: PaymentSheetGooglePay(
-    //       merchantCountryCode: 'US',
-    //       testEnv: true,
-    //     ),
-    //     style: ThemeMode.light,
-    //   ),
-    // );
-    // await Stripe.instance.presentPaymentSheet();
+    await Stripe.instance.initPaymentSheet(
+      paymentSheetParameters: SetupPaymentSheetParameters(
+        paymentIntentClientSecret: clientSecret,
+        merchantDisplayName: 'ZenRun',
+        applePay: PaymentSheetApplePay(merchantCountryCode: 'US'),
+        googlePay: PaymentSheetGooglePay(
+          merchantCountryCode: 'US',
+          testEnv: true,
+        ),
+        style: ThemeMode.light,
+      ),
+    );
+    await Stripe.instance.presentPaymentSheet();
   }
 
   Future<void> _activateSubscription(

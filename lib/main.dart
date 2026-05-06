@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:fast_cached_network_image/fast_cached_network_image.dart';
 import 'package:firebase_core/firebase_core.dart';
-// import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:just_audio_background/just_audio_background.dart';
@@ -54,10 +54,9 @@ Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  // Stripe — replace with your publishable key from https://dashboard.stripe.com/test/apikeys
-  // Stripe.publishableKey = 'pk_test_51RhHnBBV8sQxphGUfXqCFyB0IHtiIwOPYAgAdqjGfQmHIVvP3zBW69sMPFODXFV9wPDnw8hkMaEmIoPiZjPuQ8lq00HLxxuTa2';
-  // Stripe.merchantIdentifier = 'merchant.ai.zenrun.app';
-  // await Stripe.instance.applySettings();
+  Stripe.publishableKey = 'pk_test_51RhHnBBV8sQxphGUfXqCFyB0IHtiIwOPYAgAdqjGfQmHIVvP3zBW69sMPFODXFV9wPDnw8hkMaEmIoPiZjPuQ8lq00HLxxuTa2';
+  Stripe.merchantIdentifier = 'merchant.ai.zenrun.app';
+  await Stripe.instance.applySettings();
   await ToLn.init(baseLocale: 'en');
   await GetStorage.init();
   await FastCachedImageConfig.init();
