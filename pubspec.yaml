@@ -84,11 +84,11 @@ dependencies:
   get_storage: ^2.1.1
   font_awesome_flutter: ^10.12.0
   story_view:
-  just_audio: ^0.10.5
+#  just_audio: ^0.10.4
   http_parser:
   visibility_detector:
-  just_audio_background: ^0.0.1-beta.17
-  flutter_stripe:
+  just_audio_background: any
+#  flutter_stripe:
 #  telegram_web_app: ^0.3.3
 #  flutter_telegram_miniapp: ^0.0.10
 
